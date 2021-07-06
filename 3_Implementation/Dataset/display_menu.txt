@@ -1,0 +1,12 @@
+(1) Create A New Bill
+(2) Delete an Incorrect Bill
+(3) Search For A Bill By Bill Number
+(4) Search For A Bill By Customer Name
+(5) Display Day(s) of Maximum Sales
+(6) Display Day(s) of Minimum Sales
+(7) Display Sales Earlier Than A Specified Date
+(8) Display Sales Later Than A Specified Date
+(9) View Today's Sales Statistics
+(10) View all Sales Statistics
+(11) View Inventory
+(0) Exit From The Program

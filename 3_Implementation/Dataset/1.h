@@ -1,2 +1,0 @@
-int display_menu();
-

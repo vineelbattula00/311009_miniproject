@@ -1,2 +1,0 @@
-Delete bill_num.txt
-Delete bill_num.txt

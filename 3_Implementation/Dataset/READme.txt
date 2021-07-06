@@ -1,5 +1,15 @@
 ---> GROCERY BILLING SYSTEM <---
 
+TEAM NUMBER : 1
+
+TEAM MEMBERS : 
+
+(1) Ankit Agrawal (IMT2019010)
+(2) Chandrahas Sai Kotagiri (IMT2019019)
+(3) Ganesh Malladi (IMT2019032)
+(4) Gunin Jain (IMT2019034)
+(5) Manuj Malik (IMT2019052)
+(6) Satwik Samayamantry (IMT2019077)
 
 HOW TO COMPILE AND RUN THE FILE : 
 

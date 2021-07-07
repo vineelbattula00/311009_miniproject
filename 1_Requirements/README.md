@@ -26,5 +26,5 @@ Capacity: The system needs to sustain at the very least 1000 individuals at once
 User-Interface: The user interface acknowledges within 5 seconds.
 Consistency: The system requires to make certain that the standards of the Microsoft accessibilities are complied with.
 
-
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/3ba09c6e655f4331ac87bb30fbb601cf)](https://www.codacy.com/gh/vineelbattula00/311009_miniproject/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=vineelbattula00/311009_miniproject&amp;utm_campaign=Badge_Grade)
 

@@ -3,6 +3,6 @@
 ![code quality score](https://www.code-inspector.com/project/24672/score/svg)
 ![code grade](https://www.code-inspector.com/project/24672/status/svg)
 [![BUILD](https://github.com/vineelbattula00/311009_miniproject/actions/workflows/Build.yml/badge.svg)](https://github.com/vineelbattula00/311009_miniproject/actions/workflows/Build.yml)
-
+[![Static Code Quality- Cppcheck](https://github.com/vineelbattula00/311009_miniproject/actions/workflows/cpp.yml/badge.svg)](https://github.com/vineelbattula00/311009_miniproject/actions/workflows/cpp.yml)
 
 

@@ -6,7 +6,7 @@ BUILD = build
 
 # All source code files
 SRC = main.c\
-src1.c\
+src/1.c\
 src/2.c\
 src/3.c\
 src/4.c\
@@ -16,7 +16,7 @@ src/6.c\
 
 # All test source files
 TEST_SRC = SRC = main.c\
-src1.c\
+src/1.c\
 src/2.c\
 src/3.c\
 src/4.c\

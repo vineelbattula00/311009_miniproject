@@ -1,5 +1,6 @@
 # 311009_miniproject
 ![image](https://user-images.githubusercontent.com/86198474/125446286-0fa5aeec-b803-487e-9dcf-a8fb2cbab0ce.png)
+
 Grocery Billing System
 
 1.Introduction : The main goal of this project is to create a complete grocery billing system which stores the bill no, billing name,track on sale some of the important function Create A New Bill,Delete an Incorrect Bill,Search For A Bill By Bill Number,Search For A Bill By Customer Name,Display Day(s) of Maximum Sales,Display Day(s) of Minimum Sales,Display Sales Earlier Than A Specified Date,Display Sales Later Than A Specified Date,View Today's Sales Statistics,View all Sales Statistics,View Inventory

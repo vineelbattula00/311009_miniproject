@@ -5,5 +5,5 @@
 [![BUILD](https://github.com/vineelbattula00/311009_miniproject/actions/workflows/Build.yml/badge.svg)](https://github.com/vineelbattula00/311009_miniproject/actions/workflows/Build.yml)
 [![Static Code Quality- Cppcheck](https://github.com/vineelbattula00/311009_miniproject/actions/workflows/cpp.yml/badge.svg)](https://github.com/vineelbattula00/311009_miniproject/actions/workflows/cpp.yml)
 [![Contribution Check - Git Inspector](https://github.com/vineelbattula00/311009_miniproject/actions/workflows/gitinspector.yml/badge.svg)](https://github.com/vineelbattula00/311009_miniproject/actions/workflows/gitinspector.yml)
-
+[![C/C++ CI](https://github.com/vineelbattula00/311009_miniproject/actions/workflows/c.yml/badge.svg)](https://github.com/vineelbattula00/311009_miniproject/actions/workflows/c.yml)
 

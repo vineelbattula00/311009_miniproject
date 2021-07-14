@@ -15,8 +15,7 @@ PROJECT_NAME = grocery billing system
 BUILD = build
 
 # All source code files
-SRC = main.c\
-src/1\
+SRC = src/1\
 src/2\
 src/3\
 src/4\
@@ -24,7 +23,12 @@ src/5\
 src/6
 
 # All test source files
-TEST_SRC = src/main.c\
+TEST_SRC = src/1\
+src/2\
+src/3\
+src/4\
+src/5\
+src/6\
 test/test.c\
 unity/unity.c\
 

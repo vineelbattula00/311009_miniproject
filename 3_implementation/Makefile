@@ -1,5 +1,5 @@
 # Name of the project
-PROJECT_NAME = grocery billing system
+PROJECT_NAME = main
 
 # Output directory
 BUILD = build

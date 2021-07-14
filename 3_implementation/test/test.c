@@ -17,19 +17,15 @@ void tearDown(){}
 
 
 void test_login(void){
-    TEST_ASSERT_EQUAL(pass,login("username","passwordsbanls"));
+    TEST_ASSERT_EQUAL(void,login("username","passwordsbanls"));
 }
 
 void test_Create_A_New_Bill(void){
-    TEST_ASSERT_EQUAL(pass,Create_A_New_bill("vineel","9346750631","maggi","2",);
+    TEST_ASSERT_EQUAL(void,Create_A_New_bill("vineel","9346750631","maggi","2",);
 }
 
 void test_Delete_An_Incorrect_Bill(void){
-    TEST_ASSERT_EQUAL(pass,Delete_An_Incorrect_Bill("13")
-}
-
-void test_View_Inventory(void){
-    TEST_ASSERT_EQUAL(pass,"11");
+    TEST_ASSERT_EQUAL(void,Delete_An_Incorrect_Bill("13")
 }
 
 int main(){
@@ -38,7 +34,6 @@ int main(){
     RUN_TEST(test_login);
     RUN_TEST(test_Create_A_New_Bill);
     RUN_TEST(test_Delete_An_Incorrect_Bill);
-    RUN_TEST(test_View_Inventory);
     
     return UNITY_END();
 }

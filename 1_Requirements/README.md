@@ -25,6 +25,27 @@ Action Time: The system offers acknowledgment in simply one 2nd once the ‘indi
 Capacity: The system needs to sustain at the very least 1000 individuals at once.
 User-Interface: The user interface acknowledges within 5 seconds.
 Consistency: The system requires to make certain that the standards of the Microsoft accessibilities are complied with.
+An easy way to automate all functionalities of the employees of Company. Provides full functional reports to management of Company. 
+Committed to bring the best way of management in the various forms of Employment Management. 
+Tool to manage the inner operation of Company related to employee Details, Leave, Salary and Attendance.
+
+4W's & 1H -
+
+1. When – access anytime
+
+2. What- digital medium to maintain billing record
+
+3. Where –access from  pc
+
+4. Who – admin can use tis system
+
+5. How –
+
+          i.	The option displays the menu
+
+          ii.	from the given menu choose the needed option 
+   
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/3ba09c6e655f4331ac87bb30fbb601cf)](https://www.codacy.com/gh/vineelbattula00/311009_miniproject/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=vineelbattula00/311009_miniproject&amp;utm_campaign=Badge_Grade)
+pc![124984165-81894b80-e056-11eb-8114-909c0c89aff0](https://user-images.githubusercontent.com/86198474/125685403-d3e78de0-a3db-4540-81ee-2a0644ab5d3f.png)
 

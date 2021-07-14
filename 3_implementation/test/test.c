@@ -11,7 +11,7 @@
 #define PROJECT_NAME    "grocery billing system"
 
 /* Prototypes for all the test functions */
-void test_login(void);
+void test_display_menu(void);
 
 
 /* Required by the unity test framework */
@@ -26,7 +26,7 @@ int main()
   UNITY_BEGIN();
 
 /* Run Test functions */
-  RUN_TEST(test_login);
+  RUN_TEST(test_display_menu);
 
 
   /* Close the Unity Test Framework */
@@ -34,7 +34,6 @@ int main()
 }
 
 /* Write all the test functions */ 
-void test_add(void) {
-  TEST_ASSERT_EQUAL(SUCCESS, login("user id", "password"));
+void test_display_menu(void) {
 }
 

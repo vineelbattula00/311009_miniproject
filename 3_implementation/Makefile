@@ -1,5 +1,4 @@
-PROJECT_NAME = grocery billing system
-
+PROJECT_NAME = main
 SRC =src/1.c \
 src/2.c \
 src/3.c \

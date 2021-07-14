@@ -1,10 +1,5 @@
-# Name of the project
-PROJECT_NAME = grocery_billing_system
+PROJECT_NAME =grocery billing system
 
-# Output directory
-BUILD = build
-
-# All source code files
 SRC = main.c\
 src/1.c\
 src/2.c\
@@ -12,66 +7,59 @@ src/3.c\
 src/4.c\
 src/5.c\
 src/6.c\
+BUILD = build
+
+#INC=inc
+UNI=unity/unity.c
+
+INC	= inc\
+-Iunity\
+
+ifdef OS
+   RM = del /q
+   FixPath = $(subst /,\,$1)
+   EXEC = exe
+else
+   ifeq ($(shell uname), Linux)
+      RM = rm -rf
+      FixPath = $1
+	  EXEC = out
+   endif
+endif
+TEST_SRC = test/test
 
 
-# All test source files
-TEST_SRC = SRC = main.c\
-src/1.c\
-src/2.c\
-src/3.c\
-src/4.c\
-src/5.c\
-src/6.c\
-test/test_bill.c\
-unity/unity.c\
+PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
 
 TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
 
-# All include folders with header files
-INC	= -Iinc\
--Iunity\
+INCLUDE_LIBS = -lcunit
 
-#Library Inlcudes
-#if working with CUnit 
-#INCLUDE_LIBS = -lcunit
-INCLUDE_LIBS =
-
-# Project Output name
 PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
 
-# Document files
-DOCUMENTATION_OUTPUT = documentation/html
+.PHONY: run clean test doc 
 
-# Default target built
-$(PROJECT_NAME):all
+$(PROJECT_NAME).exe : $(SRC)
+	gcc -I $(INC) $(PROJECT_NAME).c $(SRC)  -o $(PROJECT_NAME).exe
 
-# Run the target even if the matching name exists
-.PHONY: run clean test doc all
+run: $(PROJECT_NAME).exe
+	$(PROJECT_NAME).exe
 
-all: $(SRC) $(BUILD)
-	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT).out
+doc:
+	make -C ./documentation
 
-# Call `make run` to run the application
-run:$(PROJECT_NAME)
-	./$(PROJECT_OUTPUT).out
+test:$(TEST)
+	gcc -Iinc $(INC) $(UNI) $(SRC) $(TEST_SRC).c -o test\test_record.exe
+	./test\test.exe
 
-# Document the code using Doxygen
-#doc:
-#	make -C ./documentation
-
-# Build and run the unit tests
-test:$(BUILD)
-	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT)
-	./$(TEST_OUTPUT)
-#Coverage
-coverageCheck:$(BUILD)
-	g++ -fprofile-arcs -ftest-coverage -fPIC -O0 $(TEST_SRC) $(INC) -o $(TEST_OUTPUT)
-	./$(TEST_OUTPUT)
-
-# Remove all the built files, invoke by `make clean`
 clean:
 	rm -rf $(BUILD) $(DOCUMENTATION_OUTPUT)
 
-# Create new build folder if not present
 $(BUILD):
 	mkdir build
+
+all: $(SRC) $(BUILD)
+	    gcc -I inc $(UNI) $(SRC) $(INC) $(TEST_SRC).c -o $(PROJECT_OUTPUT)
+
+run1:
+	./$(PROJECT_OUTPUT)

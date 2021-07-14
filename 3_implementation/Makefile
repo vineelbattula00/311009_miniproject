@@ -1,13 +1,3 @@
-# OS detection
-
-ifeq ($(OS), Windows_NT)
-	EXECUTABLE=a.exe
-else
-	EXECUTABLE=a.out
-endif
-
-
-
 # Name of the project
 PROJECT_NAME = grocery billing system
 
@@ -15,20 +5,22 @@ PROJECT_NAME = grocery billing system
 BUILD = build
 
 # All source code files
-SRC = src/1\
-src/2\
-src/3\
-src/4\
-src/5\
-src/6
+SRC = main.c\
+src/1.c\
+src/2.c\
+src/3.c\
+src/4.c\
+src/5.c\
+src/6.c\
+
 
 # All test source files
-TEST_SRC = src/1\
-src/2\
-src/3\
-src/4\
-src/5\
-src/6\
+TEST_SRC = src/1.c\
+src/2.c\
+src/3.c\
+src/4.c\
+src/5.c\
+src/6.c\
 test/test.c\
 unity/unity.c\
 
@@ -39,11 +31,12 @@ INC	= -Iinc\
 -Iunity\
 
 #Library Inlcudes
-#INCLUDE_LIBS = 
-INCLUDE_LIBS = -lcunit
+#if working with CUnit 
+#INCLUDE_LIBS = -lcunit
+INCLUDE_LIBS =
 
 # Project Output name
-PROJECT_OUTPUT = $(BUILD)/$(EXECUTABLE)
+PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
 
 # Document files
 DOCUMENTATION_OUTPUT = documentation/html
@@ -55,47 +48,28 @@ $(PROJECT_NAME):all
 .PHONY: run clean test doc all
 
 all: $(SRC) $(BUILD)
-	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT)
+	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT).out
 
 # Call `make run` to run the application
-run: single/main.C
-	gcc single/main.c -o $(EXECUTABLE)
-	./$(EXECUTABLE)
-	
-fast:$(PROJECT_NAME)
-	./$(PROJECT_OUTPUT)
+run:$(PROJECT_NAME)
+	./$(PROJECT_OUTPUT).out
 
 # Document the code using Doxygen
-doc:
-	make -C ./documentation
+#doc:
+#	make -C ./documentation
 
 # Build and run the unit tests
-# $(INCLUDE_LIBS) 
 test:$(BUILD)
-	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) 
+	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT)
 	./$(TEST_OUTPUT)
-
-analyze: test memcheck staticcheck coverage sanitize_check
-
-staticcheck:
-	cppcheck --enable=all -iunity .
-
-memcheck:
-	valgrind ./$(TEST_OUTPUT)
-
-sanitize_check:
-	gcc -fsanitize=address -fno-omit-frame-pointer $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) $(INCLUDE_LIBS)
+#Coverage
+coverageCheck:$(BUILD)
+	g++ -fprofile-arcs -ftest-coverage -fPIC -O0 $(TEST_SRC) $(INC) -o $(TEST_OUTPUT)
 	./$(TEST_OUTPUT)
-
-coverage:$(TEST_SRC)
-	gcc -fprofile-arcs -ftest-coverage $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) $(INCLUDE_LIBS)
-	./$(TEST_OUTPUT)
-	gcov -a calculator_operations.c
 
 # Remove all the built files, invoke by `make clean`
 clean:
-	rm -rf $(BUILD) $(DOCUMENTATION_OUTPUT) *.gcda *.gcno *.gcov
+	rm -rf $(BUILD) $(DOCUMENTATION_OUTPUT)
 
 # Create new build folder if not present
 $(BUILD):
-	mkdir build

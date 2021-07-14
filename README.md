@@ -1,3 +1,4 @@
+
 # 311009_miniproject
 ![image](https://user-images.githubusercontent.com/86198474/125446286-0fa5aeec-b803-487e-9dcf-a8fb2cbab0ce.png)
 
@@ -18,7 +19,7 @@ Visual Studio Code mingw Windows 10 cc++ extension
 5.Non Functional Requirements : Safety: Login ID: Any kind of cashier that utilize the system require to hold a Logon ID as well as password.
 
 Efficiency: Action Time: The system offers acknowledgment in simply one 2nd once the ‘individual’s details is inspected. Capacity: The system needs to sustain at the very least 1000 individuals at once. User-Interface: The user interface acknowledges within 5 seconds. Consistency: The system requires to make certain that the standards of the Microsoft accessibilities are complied with.
-
+![124984165-81894b80-e056-11eb-8114-909c0c89aff0](https://user-images.githubusercontent.com/86198474/125685102-dffa6743-05fb-4e5c-9a77-e7073a840701.png)
 
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/6738181dd8d243d1bcb6fbb0824d0d9d)](https://app.codacy.com/gh/vineelbattula00/311009_miniproject?utm_source=github.com&utm_medium=referral&utm_content=vineelbattula00/311009_miniproject&utm_campaign=Badge_Grade_Settings)

@@ -9,7 +9,7 @@ src/6.c \
 
 BUILD = build
 
-#INC=inc
+INC=inc
 UNI=unity/unity.c
 
 INC	= inc\

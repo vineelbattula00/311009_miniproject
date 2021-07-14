@@ -30,7 +30,6 @@ void test_Delete_An_Incorrect_Bill(void){
 
 int main(){
     UNITY_BEGIN();
-
     RUN_TEST(test_login);
     RUN_TEST(test_Create_A_New_Bill);
     RUN_TEST(test_Delete_An_Incorrect_Bill);

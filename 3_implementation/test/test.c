@@ -8,7 +8,6 @@
 #include "6.h"
 
 /* Modify these two lines according to the project */
-#include <lms_operations.h>
 #define PROJECT_NAME    "grocery billing system"
 
 /* Prototypes for all the test functions */
